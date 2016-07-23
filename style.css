@@ -1,0 +1,208 @@
+/* Box sizing */
+html {
+    box-sizing: border-box;
+    margin: 0cm;
+    padding: 0cm;
+}
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+/* Justification */
+p {
+    text-align: justify;
+}
+
+/* Font */
+html {
+    font-family: Helvetica;
+}
+*, ::before, ::after {
+    font-family: inherit;
+}
+
+/* Background and positioning */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Page dimensions */
+.page {
+    width: 21cm;
+    height: 29.7cm;
+    overflow: hidden;
+
+    background-color: white;
+}
+
+
+/* Colors */
+.fggreen {
+    color: YellowGreen;
+}
+.bggreen {
+    background-color: YellowGreen;
+}
+
+.fgwhite {
+    color: white;
+}
+.bgwhite {
+    background-color: white;
+}
+
+.fggrey {
+    color: #505050;
+}
+.bggrey {
+    background-color: #505050;
+}
+
+
+/* Page elements */
+.title {
+    padding-top: 1cm;
+    padding-bottom: 1em;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+section {
+    margin-left: 2cm;
+    margin-right: 2cm;
+}
+
+.container {
+    padding-top: 5mm;
+    padding-bottom: 5mm;
+}
+
+.portrait {
+    display: inline-block;
+
+    width: 4.5cm;
+    height: 6.5cm;
+
+    background-image: url("img/portrait.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-sizing: content-box;
+    border: 2mm solid white;
+}
+
+.halign {
+    display: flex;
+    justify-content: space-between;
+}
+
+.halign .spacer {
+    width: 1px;
+    margin: 10mm 5mm;
+}
+
+h2 {
+    font-size: 20pt;
+    margin-top: 0mm;
+    line-height: 100%;
+}
+
+h3 {
+    margin-top: 5mm;
+    margin-bottom: 3mm;
+}
+
+.container section:first-child h3 {
+    margin-top: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+.table .row {
+    display: flex;
+    align-items: baseline;
+}
+
+
+/* Timeline */
+.timeline .row {
+    margin-bottom: 5mm;
+}
+.timeline .row .cell:first-child {
+    margin-right: 1cm;
+    display: flex;
+    align-items: center;
+}
+.timeline .row .cell:first-child div {
+    display: inline-block;
+    color: white;
+    background-color: #505050;
+
+    font-weight: bold;
+    width: 3cm;
+    height: 20px;
+    line-height: 20px;
+    font-size: 8pt;
+    text-align: center;
+}
+.timeline .row .cell:first-child::after {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: -9px;
+    transform: rotate(45deg);
+    background-color: #505050;
+}
+
+
+/* Section: contact */
+#contact .table .row {
+    line-height: 150%;
+    margin-bottom: 5mm;
+}
+#contact .table .row .cell:first-child {
+    width: 2.5cm;
+    font-weight: bold;
+}
+#contact .row .cell:first-child::after {
+    content: ':';
+}
+
+
+/* Section: education */
+#education .timeline .row .cell {
+    font-size: 10pt;
+}
+#education .timeline .row .cell span {
+    font-size: 12pt;
+}
+
+/* Section: language */
+#language .table .row {
+    line-height: 150%;
+}
+
+#language .table .cell:first-child {
+    padding-right: 1ex;
+}
+
+#language .table .cell:first-child::before {
+    content: '\2022'; /* Bullet point */
+    margin-right: 1ex;
+}
+
+#language .table .cell:nth-child(2)::before {
+    content: '-';
+    margin-right: 1ex;
+}
+
+/* Section: voluntary */
+#voluntary .timeline .row .cell {
+    font-size: 10pt;
+}
