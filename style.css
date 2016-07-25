@@ -11,6 +11,7 @@ html {
 /* Justification */
 p {
     text-align: justify;
+    margin: 0;
 }
 
 /* Font */
@@ -38,7 +39,6 @@ body {
     background-color: white;
 }
 
-
 /* Colors */
 .fggreen {
     color: YellowGreen;
@@ -60,7 +60,6 @@ body {
 .bggrey {
     background-color: #505050;
 }
-
 
 /* Page elements */
 .title {
@@ -121,6 +120,7 @@ h3 {
 
 ul {
     margin: 0;
+    padding-left: 1.5em;
 }
 
 .table .row {
@@ -160,20 +160,34 @@ ul {
     background-color: #505050;
 }
 
+code {
+    font-family: "Courier New", Courier, monospace;
+}
+
 
 /* Section: contact */
 #contact .table .row {
     line-height: 150%;
-    margin-bottom: 5mm;
+    margin-bottom: 3mm;
 }
 #contact .table .row .cell:first-child {
-    width: 2.5cm;
+    width: 3.5cm;
     font-weight: bold;
 }
 #contact .row .cell:first-child::after {
     content: ':';
 }
 
+/* Section: work */
+#work .timeline .row .cell:first-child div {
+    width: 3.5cm;
+}
+#work .timeline .row .cell {
+    font-size: 10pt;
+}
+#work .timeline .row .cell span {
+    font-size: 12pt;
+}
 
 /* Section: education */
 #education .timeline .row .cell {
@@ -182,21 +196,23 @@ ul {
 #education .timeline .row .cell span {
     font-size: 12pt;
 }
+#education .timeline .row .cell:first-child div {
+    width: 3.5cm;
+}
 
 /* Section: language */
 #language .table .row {
     line-height: 150%;
+    padding-left: 1mm;
 }
-
 #language .table .cell:first-child {
     padding-right: 1ex;
+    width: 2.5cm;
 }
-
 #language .table .cell:first-child::before {
     content: '\2022'; /* Bullet point */
     margin-right: 1ex;
 }
-
 #language .table .cell:nth-child(2)::before {
     content: '-';
     margin-right: 1ex;
@@ -205,4 +221,7 @@ ul {
 /* Section: voluntary */
 #voluntary .timeline .row .cell {
     font-size: 10pt;
+}
+#voluntary .timeline .row .cell:first-child div {
+    width: 3.5cm;
 }
