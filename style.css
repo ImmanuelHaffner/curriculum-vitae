@@ -153,6 +153,7 @@ li {
     line-height: 20px;
     font-size: 8pt;
     text-align: center;
+    z-index: 100;
 }
 .timeline .row .cell:first-child::after {
     content: '';
