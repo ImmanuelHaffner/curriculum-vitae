@@ -123,6 +123,10 @@ ul {
     padding-left: 1.5em;
 }
 
+li {
+    line-height: 150%;
+}
+
 .table .row {
     display: flex;
     align-items: baseline;
