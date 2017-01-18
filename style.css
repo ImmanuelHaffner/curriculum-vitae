@@ -154,6 +154,7 @@ li {
     font-size: 8pt;
     text-align: center;
     z-index: 100;
+    padding-top: 1px;
 }
 .timeline .row .cell:first-child::after {
     content: '';
